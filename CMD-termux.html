@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>les commandes termux</title>
+  <style> 
+    body {
+      background-color: rgb(135, 242, 250);
+      font-family:'Arial black' Impact, sans-serif;
+      font-size: 25px;
+      font-weight: bold;
+      flex-direction: flex;
+      text-align: center;
+      height: 100vh;
+      margin: 0;
+      padding-left: 0;
+    }
+    .welcome-message {
+      font-family: Arial, sans-serif;
+      font-size: 36px;
+      font-weight: bold;
+      color: #333;
+      padding: 20px;
+      border: 5px solid #333;
+      border-radius: 10px;
+      animation: bounce 2s infinite;
+    }
+    
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    } 
+    .welcome-message {
+        background-color: blue;
+    }
+    nav {
+    background-color:lightslategray;
+    color: white;
+    text-align: ;
+    padding: 0px;
+    }
+    nav a {
+    text-decoration:none;
+    margin:1px;
+    }
+    header{
+      background-color: slategrey;
+      padding: 15px;
+      margin: 0px;
+      font-size: 30pxs;
+      font-weight: bold;
+      color: #000;
+    } 
+
+  </style>
+</head>
+<style>
+      </style>
+<body>
+  <div class="welcome-message" style="color:white">
+    Bienvenue sur CMD-termux !
+  </div>
+ <header>
+ LES COMMANDES DE BASE POUR MAITRISER TERMUX 
+ </header>
+ 
+ <h2
+  style="color:green;"> 
+ apt update
+ </h2>
+ <p><i>
+ Met à jour la liste des paquets disponibles.
+ </i></p>
+ <h2 style="color:green;">
+ apt upgrade
+ </h2>
+ <p><i>
+ Met à jour tous les paquets installés. 
+ </i></p>
+ <h2 style="color:green;">
+ apt install(+NomDuPaquet)
+ </h2> 
+ <p><i>
+ Installe un paquet spécifique.
+ </i></p>
+ <h2 style="color:green;">
+ apt search
+ </h2>
+ <p><i>
+ Recherche des packages disponibles dans les dépôts.
+ </i></p>
+ <h2 style="color:green;">
+ apt remove(+NomDuPaquet)
+ </h2>
+ <p><i>
+ Supprime un paquet spécifique installé.
+ </i></p>
+ <h2 style="color:green;">
+ apt autoremove
+ </h2>
+ <p><i>
+ Supprime automatiquement les packages devenus inutiles.
+ </i></p>
+ <h2 style="color:green;">
+ pkg update
+ </h2>
+ <p><i>
+ Met à jour la liste des paquets disponibles.
+ </i></p>
+ <h2 style="color:green;">
+ pkg upgrade
+ </h2>
+ <p><i>
+ Met à jour tous les paquets installés.
+ </i></p>
+ <h2 style="color:green;">
+ pkg install(+NomDuPaquet)
+ </h2> 
+ <p><i>
+ Installe un paquet spécifique.
+ </i></p>
+ <h2 style="color:green;">
+ pkg uninstall(+NomDuPaquet)
+ </h2>
+ <p><i>
+ Desinstalle un paquet spécifique.
+ </i></p>
+ <h2 style="color:green;">
+ apt list
+ </h2>
+ <p><i>
+ Affiche la liste des packages installés ou disponibles.
+ </i></p>
+ <h2 style="color:green;">
+ pkg search(+MotClé)
+ </h2>
+ <p><i>
+ Recherche un paquet en fonction d'un mot-clé.
+ </i></p>
+ <h2 style="color:green;">
+ ls
+ </h2>
+ <p><i>
+ Affiche le contenu du répertoire actuel.
+ </i></p>
+ <h2 style="color:green;">
+ cd (+NomDuRépertoire)
+ </h2>
+ <p><i>
+ Change de répertoire
+ </i></p>
+ <h2 style="color:green;">
+ traceroute
+ </h2>
+ <p><i>
+ Trace le chemin que prend un paquet à travers le réseau.
+ </i></p>
+ <h2 style="color:green;">
+ mkdir (+NomDuRépertoire)
+ </h2>
+ <p><i>
+ Crée un nouveau répertoire.
+ </i></p>
+ <h2 style="color:green;">
+ rm (+NomDuFichier)
+ </h2>
+ <p><i>
+ Supprime un fichier spécifique.
+ </i></p>
+ <h2 style="color:green;">
+ cp (+NomDuFichier +Destination)
+ </h2>
+ <p><i>
+ Copie un fichier vers une destination spécifique.
+ </i></p>
+ <h2 style="color:green;">
+ mv (+NomDuFichier +Destination)
+ </h2>
+ <p><i>
+ Déplace un fichier vers une destination spécifique.
+ </i></p>
+ <h2 style="color:green;">
+ cat (+NomDuFichier)
+ </h2>
+ <p><i>
+ Affiche le contenu du fichier.
+ </i></p>
+ <h2 style="color:green;">
+ grep (+MotCletDuFichier)
+ </h2>
+ <p><i>
+ Recherche un mot-clé dans le contenu d'un fichier.
+ </i></p>
+ <h2 style="color:green;">
+ chmod (+NomDuFichier)
+ </h2>
+ <p><i>
+ Modifie les permissions d'un fichier.
+ </i></p>
+ <h2 style="color:green;">
+ curl (+URL)
+ </h2>
+ <p><i>
+ Télécharge le contenu d'une URL.
+ </i></p>
+ <h2 style="color:green;">
+ ssh (+Utilisateur@Hôte)</h2>
+ <p><i>
+ Établit une connexion SSH avec un hôte distant via ssh.
+ </i></p>
+ <h2 style="color:green;">
+ ssh-keygen
+ </h2>
+ <p><i>
+ Génère une paire de clés SSH publique/privée.
+ </i></p>
+ <h2 style="color:green;">
+ ssh-copy-id
+ </h2>
+ <p><i>
+ Copie la clé publique vers un serveur distant pour une connexion SSH sans mot de passe.
+ </i></p>
+ <h2 style="color:green;">
+ whoami
+ </h2>
+ <p><i>
+ Affiche le nom de l'utilisateur actuel.
+ </i></p>
+ <h2 style="color:green;">
+ sudo (+NomDeLaCmd)
+ </h2>
+ <p><i>
+ Exécute une commande avec les privilèges de superutilisateur (root), si autorisé.
+ </i></p>
+ <h2 style="color:green;">
+ su
+ </h2>
+ <p><i>
+ Change l'utilisateur courant en superutilisateur (root) "si l'appareil est rooter".
+ </i></p>
+ <h2 style="color:green;">
+ service
+ </h2>
+ <p><i>
+ Gère les services système.
+ </i></p>
+ <h2 style="color:green;">
+ sort
+ </h2>
+ <p><i>
+ Trie les lignes de texte dans un fichier.
+ </i></p>
+ <h2 style="color:green;">
+ jobs
+ </h2>
+ <p><i>
+ Affiche les tâches en cours d'exécution en arrière-plan.
+ </i></p>
+ <h2 style="color:green;">
+ tar
+ </h2>
+ <p><i>
+ Permet de créer, manipuler et extraire des fichiers d'archive au format tar.
+ </i></p>
+ <h2 style="color:green;">
+ top
+ </h2>
+ <p><i>
+ Affiche les processus en cours d'exécution et leurs informations.
+ </i></p>
+ <h2 style="color:green;">
+ tmux
+ </h2>
+ <p><i>
+ Gère des sessions de terminal multiplexées.
+ </i></p>
+ <h2 style="color:green;">
+ termux-wake-lock
+ </h2>
+ <p><i>
+ Empêche la mise en veille de l'appareil
+ </i></p>
+ <h2 style="color:green;">
+ termux-share
+ </h2>
+ <p><i>
+ Partage du contenu depuis termux
+ </i></p>
+ <h2 style="color:green;">
+ ps
+ </h2>
+ <p><i>
+ Affiche les processus en cours d'exécution.
+ </i></p>
+ <h2 style="color:green;">
+ kill (+PID)
+ </h2>
+ <p><i>
+ Tue un processus spécifique en utilisant son ID de processus.
+ </i></p>
+ <h2 style="color:green;">
+ ping (+AdresseIPOuNomDeDomaine)
+ </h2>
+ <p><i>
+ Envoie des paquets ICMP à une adresse IP ou à un domaine pour tester la connectivité.
+ </i></p>
+ <h2 style="color:green;">
+ ifconfig
+ </h2>
+ <p><i>
+ Affiche les informations sur les interfaces réseau.
+ </i></p>
+ <h2 style="color:green;">
+ exit
+ </h2>
+ <p><i>
+ Ferme la session en cours et quitte l'application
+ </i></p>
+ <h2 style="color:green;">
+ bg
+ </h2>
+ <p><i>
+ Passe une tâche en cours d'exécution en arrière-plan.
+ </i></p>
+ <h2 style="color:green;">
+ history
+ </h2>
+ <p><i>
+ Affiche l'historique des commandes exécutés
+ </i></p>
+ <h2 style="color:green;">
+ htop
+ </h2>
+ <p><i>
+ Affiche les processus en cours d'exécution de manière interactive.
+ </i></p>
+ <h2 style="color:green;">
+ ping
+ </h2>
+ <p><i>
+ Envoie des paquets ICMP à une adresse réseau pour tester la connectivité.
+ </i></p>
+ <h2 style="color:green;">
+ passwd
+ </h2>
+ <p><i>
+ Permet de changer le mot de passe de l'utilisateur actuel.
+ </i></p>
+ <h2 style="color:green;">
+ pwd
+ </h2>
+ <p><i>
+ Affiche le chémin du répertoire courant.
+ </i></p>
+ <h2 style="color:green;">
+ nohup
+ </h2>
+ <p><i>
+ Exécute une commande qui continue à s'exécuter même après la déconnexion.
+ </i></p>
+ <h2 style="color:green;">
+ nano
+ </h2>
+ <p><i>
+ Ouvre l'éditeur de texte nano.
+ </i></p>
+ <h2 style="color:green;">
+ mv
+ </h2>
+ <p><i>
+ Déplace des fichiers ou des répertoires.
+ </i></p>
+ <h2 style="color:green;">
+ rm
+ </h2>
+ <p><i>
+ Supprime des fichiers ou des répertoires
+ </i></p>
+ <h2 style="color:green;">
+ date
+ </h2>
+ <p><i>
+ Affiche le jour , le mois, l'heure, l'année.
+ </i></p>
+ <h2 style="color:green;">
+ dd
+ </h2>
+ <p><i>
+ Copie et convertit des fichiers.p
+ </i></p>
+ <h2 style="color:green;">
+ du
+ </h2>
+ <p><i>
+ Affiche l'espace disque utilisé par les fichiers et répertoires.
+ </i></p>
+ <h2 style="color:green;">
+ df 
+ </h2>
+ <p><i>
+ Affiche l'utilisation de l'espace disque.
+ </i></p>
+ <h2 style="color:green;">
+ fg
+ </h2>
+ <p><i>
+ Passe une tâche en arrière-plan en avant-plan.
+ </i></p>
+ <h2 style="color:green;">
+ find
+ </h2>
+ <p><i>
+ Recherche des fichiers dans un répertoire.
+ </i></p>
+ <h2 style="color:green;">
+ route
+ </h2>
+ <p><i>
+ Affiche et manipule la table de routage IP.
+ </i></p>
+ <h2 style="color:green;">
+ git
+ </h2>
+ <p><i>
+ Gère les dépôts Git.
+ </i></p>
+ <h2 style="color:green;">
+ scp
+ </h2>
+ <p><i>
+ Copie des fichiers entre des ordinateurs via SSH.
+ </i></p>
+ <h2 style="color:green;">
+ chown
+ </h2>
+ <p><i>
+ Change le propriétaire et le groupe d'un fichier.
+ </p></i>
+ <h2 style="color:green;">
+ groups
+ </h2>
+ <p><i>
+ Affiche les groupes auxquels appartient l'utilisateur.
+ </i></p>
+ <h2 style="color:green;">
+ uptime
+ </h2>
+ <p><i>
+ Affiche depuis combien de temps le système est en ligne.
+ </i></p>
+ <h2 style="color:green;">
+ screen
+ </h2>
+ <p><i>
+ Crée une session de terminal virtuelle.
+ </i></p>
+ <h2 style="color:green;">
+ alias
+ </h2>
+ <p><i>
+ Permet de créer des alias pour des commandes.
+ </i></p>
+ <h2 style="color:green;">
+ reboot
+ </h2>
+ <p><i>
+ Redémarre le système.
+ </i></p>
+ <h2 style="color:green;">
+ shutdown
+ </h2>
+ <p><i>
+ Arrête ou redémarre le système.
+ </i></p>
+ <h2 style="color:green;">
+ uname
+ </h2>
+ <p><i>
+ Affiche des informations sur le noyau du système.
+ </i></p>
+ <h2 style="color:green;">
+ hostname
+ </h2>
+ <p><i>
+ Affiche ou configure le nom d'hôte du système.
+ </i></p>
+ <h2 style="color:green;">
+ who
+ </h2>
+ <p><i>
+ Affiche les utilisateurs connectés.
+ </i></p>
+ <h2 style="color:green;">
+ watch
+ </h2>
+ <p><i>
+ Exécute périodiquement une commande donnée et affiche les résultats.
+ </i></p>
+ <h2 style="color:green;">
+ zip
+ </h2>
+ <p><i>
+ Compresse des fichiers au format ZIP.
+ </i></p>
+ <h2 style="color:green;">
+ unzip
+ </h2>
+ <p><i>
+ décompresse des fichiers au format ZIP.
+ </i></p>
+ <h6 style="color:red;">
+ &copy;2024 Tous droits réservés
+ </h6>
+ <nav>
+ <a href="#"><h5><button><ins style="color:blue;">
+ page d'acceuille
+ </ins></button></h5></a>
+ </nav>
+</body>
+</html>
